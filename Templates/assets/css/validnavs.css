@@ -379,7 +379,7 @@ Version: 1.0
 
 	.navbar.navbar.no-background .attr-right .attr-nav .side-menu {
 		position: relative;
-		top: 8px;
+		top: -5px;
 	}
 }
 
@@ -481,15 +481,30 @@ nav.navbar.validnavs {
 }
 
 nav.navbar.validnavs .navbar-toggle {
-	margin: 0;
-	background: transparent;
-	border: none;
-	font-size: 25px;
-	padding: 30px 0;
+    margin: 0;
+    background: var(--white);
+    border: none;
+    font-size: 25px;
+    color: var(--dark);
+    padding: 30px 0;
+    width: 30px;
+    height: 30px;
+   
+}
+@media screen and (max-width:1023px) {
+    nav.navbar.validnavs .navbar-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
 }
 
 nav.navbar.validnavs .navbar-toggle i {
 	font-weight: 300;
+    color: var(--dark);
+}
+nav.navbar.validnavs .navbar-toggle i::before{
+    font-size: 30px;
 }
 
 nav.navbar.validnavs ul.nav .dropdown-menu .dropdown-menu {
@@ -933,7 +948,7 @@ body.on-side nav.navbar::after {
 	line-height: 34px;
 	position: relative;
 	text-align: center;
-	top: 43px;
+	top: 30px;
 	width: 35px;
 	z-index: 2;
 	color: rgba(255, 255, 255, 0.8);
@@ -1065,7 +1080,7 @@ body.on-side nav.navbar::after {
 }
 
 .navbar.navbar-default.attr-border-full .attr-right .attr-nav li.side-menu a {
-	top: -5px;
+	top: 10px;
 }
 
 .navbar .attr-nav .side-menu span {
@@ -1125,7 +1140,7 @@ body.on-side .body-overlay {
 
 nav.navbar.validnavs ul.nav>li.dropdown>a.dropdown-toggle::after {
 	content: "\f282";
-	font-family:var(--bootstrap);
+	font-family: var(--bootstrap);
 	margin-left: 5px;
 	margin-top: 2px;
 	border: none;
@@ -1169,6 +1184,10 @@ nav.navbar.validnavs.navbar-fixed.nav-box.no-background {
 	top: 115px;
 	width: auto;
 	left: auto;
+}
+
+nav.navbar.validnavs.navbar-fixed.nav-box.no-background {
+	color: var(--dark);
 }
 
 nav.navbar.validnavs.navbar-fixed.nav-box.no-background ul.nav>li>a,
@@ -2044,7 +2063,7 @@ nav.navbar.validnavs.brand-center {
 	nav.navbar.validnavs li.dropdown a.dropdown-toggle:before {
 		font-family: var(--bootstrap);
 		font-weight: 900;
-		content: "\f105";
+		content: "\f282";
 		float: right;
 		font-size: 16px;
 		margin-left: 10px;
@@ -2789,24 +2808,44 @@ nav.navbar.validnavs.navbar-fixed.no-background.nav-border.with-bg {
 /* Changes that are made by ashwin sevak will be reflected here */
 /* Logo White */
 
+#logo-white {
+	font-size: 30px;
+	color: white;
+}
+
+#logo-white .logo-inner-white {
+	color: #104cba;
+}
+
 .logo-white {
 	font-size: 30px;
 	color: white;
 }
 
-.logo-white .logo-inner-white {
+.logo-dark {
+	color: var(--dark);
+	font-size: 30px;
+}
+
+.logo-white .logo-inner-white,
+.logo-dark .logo-inner-white {
 	color: #104cba;
 }
 
-/* Logo Dark */
-.logo-dark {
-	color: white;
+@media screen and (max-width:1024px) {
+    .logo-white,.logo-dark {
+        font-size: 30px;
+        color: var(--dark);
+    }
 }
 
+
+
 @media (max-width:768px) {
-	.navbar .container-fill{
+	.navbar .container-fill {
 		position: relative;
 	}
+
 	.navbar-header {
 		right: 0;
 		width: 100%;
@@ -2827,7 +2866,7 @@ nav.navbar.validnavs.navbar-fixed.no-background.nav-border.with-bg {
 	a.navbar-brand {
 		position: relative;
 		left: auto;
-		transform:none;
+		transform: none;
 		top: auto;
 	}
 }

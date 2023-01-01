@@ -1,9 +1,9 @@
-{% comment %} <header>
-    <!-- Start Navigation -->
-    <nav
-        class="navbar  mobile-sidenav nav-border attr-border attr-border-full navbar-sticky navbar-default validnavs navbar-fixed white no-background">
+{% comment %} Header Part Start From Here {% endcomment %}
+<header>
+    {% comment %} Navigation Parts Starts From Here {% endcomment %}
+    <nav class="navbar mobile-sidenav nav-border attr-border attr-border-full navbar-sticky navbar-default validnavs navbar-fixed white no-background">
 
-        <!-- Start Top Search -->
+        {% comment %} Top Search Starts From Here {% endcomment %}
         <div class="top-search">
             <div class="container-xl">
                 <div class="input-group">
@@ -13,38 +13,33 @@
                 </div>
             </div>
         </div>
-        <!-- End Top Search -->
+        {% comment %} Top Search Ends Here {% endcomment %}
 
         <div class="container-fill d-flex justify-content-between align-items-center">
-
-
-            <!-- Start Header Navigation -->
+            {% comment %} Header Navigation {% endcomment %}
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                    <i class="fa fa-bars"></i>
+                    <i class="bi bi-list"></i>
                 </button>
                 <a class="navbar-brand" href="{% url 'home' %}">
-                    <!-- <img src="assets/img/logo-light.png" class="logo logo-display" alt="Logo">
-                    <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo"> -->
                     <span class="logo-white">Soft<span class="logo-inner-white">Tunners</span>
                 </a>
             </div>
-            <!-- End Header Navigation -->
+            {% comment %} Header Navigation Ends Here {% endcomment %}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            {% comment %} Side Navigation {% endcomment %}
             <div class="collapse navbar-collapse" id="navbar-menu">
 
-                <!-- <img src="assets/img/logo.png" alt="Logo"> -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                    <i class="fa fa-times"></i>
+                    <i class="bi bi-x"></i>
                 </button>
 
                 <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                    <!-- Home -->
+                    {% comment %} Home {% endcomment %}
                     <li>
                         <a href="{% url 'home' %}" class="active">Home</a>
                     </li>
-                    <!-- Company  -->
+                    {% comment %} Company {% endcomment %}
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Company</a>
                         <ul class="dropdown-menu">
@@ -52,7 +47,7 @@
                             <li><a href="{% url 'team' %}">Our Team</a></li>
                         </ul>
                     </li>
-                    <!-- Service -->
+                    {% comment %} Our Services {% endcomment %}
                     <li>
                         <a href="{% url 'service' %}" class="active">Our Services</a>
                     </li>
@@ -66,10 +61,10 @@
                         <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#login">Customer Login</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
 
             <div class="attr-right">
-                <!-- Start Atribute Navigation -->
+                {% comment %} Have Any Question {% endcomment %}
                 <div class="attr-nav">
                     <ul>
                         <li class="side-menu">
@@ -92,20 +87,17 @@
                         </li>
                     </ul>
                 </div>
-                <!-- End Atribute Navigation -->
+                {% comment %} End Attribute Navigation {% endcomment %}
 
-                <!-- Start Side Menu -->
+                {% comment %} Side Menu {% endcomment %}
                 <div class="side">
-                    <a href="{% url 'home' %}" class="close-side"><i class="icon_close"></i></a>
+                    <a href="{% url 'home' %}" class="close-side"><i class="bi bi-x"></i></a>
                     <div class="widget">
                         <div class="logo">
-                            <!-- <img src="assets/img/logo-light.png" alt="Logo"> -->
-                            <span class="logo-white">Soft<span class="logo-inner-white">Tunners</span>
+                            <span id="logo-white">Soft<span class="logo-inner-white">Tunners</span></span>
                         </div>
                         <p>
-                            Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now
-                            easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may
-                            purse means few blind.
+                            We may be virtual, but we're here for you in a real way, Let's connect and turn your ideas into reality
                         </p>
                     </div>
                     <div class="widget address">
@@ -140,7 +132,7 @@
                                 <input type="email" placeholder="Enter your e-mail" class="form-control" name="email">
                                 <span class="input-group-addon">
                                     <button type="submit">
-                                        <i class="arrow_right"></i>
+                                        <i class="bi bi-mailbox"></i>
                                     </button>
                                 </span>
                             </div>
@@ -148,29 +140,26 @@
                     </div>
                     <div class="widget social">
                         <ul class="link">
-                            <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="bi bi-github"></i></a></li>
                         </ul>
                     </div>
-
                 </div>
-                <!-- End Side Menu -->
+               {% comment %} Side Menu End {% endcomment %}
 
-                <!-- Overlay screen for menu -->
+                {% comment %} Overlay screen {% endcomment %}
                 <div class="overlay-screen"></div>
-                <!-- End Overlay screen for menu -->
+                {% comment %} Overlay Screen End {% endcomment %}
 
             </div>
-            <!-- Main Nav -->
-
+          {% comment %} Main Menu End {% endcomment %}
         </div>
     </nav>
-    <!-- End Navigation -->
+    {% comment %} Navigation End {% endcomment %}
 </header>
+{% comment %} Main Header Code Ends Here {% endcomment %}
 
 
 
-
- {% endcomment %}
