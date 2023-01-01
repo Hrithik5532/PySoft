@@ -1,0 +1,232 @@
+{% comment %} Footer Component Start from Here {% endcomment %}
+<footer class="bg-dark text-light">
+    <div class="container">
+        <div class="f-items default-padding">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 item">
+                    <div class="f-item about">
+                        <span class="logo-white">Soft<span class="logo-inner-white">Tunners</span>
+                            <div style="margin-bottom: 25px;"></div>
+                            {% comment %} <img class="logo" src="assets/img/logo-light.png" alt="Logo">{% endcomment %}
+
+                            <p>
+                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke
+                                happy for you are out. Fertile how old address did showing.
+                            </p>
+                            <ul class="social">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 item">
+                    <div class="f-item link">
+                        <h4 class="widget-title">Services</h4>
+                        <ul>
+                            <li>
+                                <a href="services-details.html"><i class="fas fa-angle-right"></i>Website Development</a>
+                            </li>
+                            <li>
+                                <a href="services-details.html"><i class="fas fa-angle-right"></i>Mobile Development</a>
+                            </li>
+                            <li>
+                                <a href="services-details.html"><i class="fas fa-angle-right"></i>Software Development</a>
+                            </li>
+                            <li>
+                                <a href="services-details.html"><i class="fas fa-angle-right"></i>UI/UX Designing</a>
+                            </li>
+                            <li>
+                                <a href="services-details.html"><i class="fas fa-angle-right"></i>Cloud Computing</a>
+                            </li>
+                            <li>
+                                <a href="services-details.html"><i class="fas fa-angle-right"></i>Check Out More...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 item">
+                    <div class="f-item contact-widget">
+                        <h4 class="widget-title">Contact Info</h4>
+                        <div class="address">
+                            <ul>
+                                <li>
+                                    B/3, Devdarshan Society Pererawadi, Sakinaka Mumbai, Maharashtra, India 400072
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <strong>Email :</strong>
+                                        <a href="mailto:softtunners@gmail.com">softtunners@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <strong>Phone :</strong>
+                                        <a href="tel:+918879963368">+91 8879963368</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 item">
+                    <div class="f-item newsletter">
+                        <h4 class="widget-title">Subscribe to Newsletter</h4>
+                        <p>
+                            Join our subscribers list to get the latest news and special offers.
+                        </p>
+                        <form action="#">
+                            <input type="email" placeholder="Your Email" class="form-control" name="email">
+                            <button data-bs-toggle="modal" data-bs-target="#subscribe"> Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  {% comment %} Footer Patch {% endcomment %}
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-box">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&copy; Copyright 2022. All Rights Reserved by <a href="javascript:void(0)">SoftTunners</a></p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <ul>
+                            <li>
+                                <a href="about-us.html">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html">Privacy & Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% comment %} Footer Patch Ends {% endcomment %}
+</footer>
+{% comment %} Footer Codes Ends Here {% endcomment %}
+
+
+
+
+{% comment %} PopUp Modal Code for Subscribe Start from Here {% endcomment %}
+<div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="subscribeHeader" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content softtunners-modal">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi-x"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="heading">
+                    <h3>Customer subscribe</h3>
+                    <p>Log in to continue your Customer Portal</p>
+                </div>
+
+                <form action="/">
+                    <div class="form-group">
+                        <label for="email" class="label">Customer ID</label>
+                        <input type="email" class="form-control" placeholder="Enter Your Customer ID" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="label">Password</label>
+                        <div class="position-relative">
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                    </div>
+                    <div class="form-group d-flex flex-wrap justify-content-between">
+                        <a href="" class="font-size-3 text-dodger line-height-reset">Forget Password</a>
+                    </div>
+                    <div class="form-group mb-8 button">
+                        <button class="btn ">Log in
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% comment %} Pop Up Modal Subscribe Ends Here {% endcomment %}
+
+
+
+<style>
+    .softtunners-modal {
+        overflow: hidden;
+        background: #091d3e;
+    }
+    .softtunners-modal::after{
+        position: absolute;
+        left: 5%;
+        top: 0%;
+        content: "";
+        height: 100px;
+        width: 100px;
+        background: #104cba;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background-size: 220% 150%;
+        opacity: 1;
+        -webkit-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        -webkit-transition-delay: 900ms;
+        transition-delay: 900ms;
+        border-radius: 50%;
+        filter: blur(80px);
+        -webkit-filter: blur(80px);
+    }
+    .softtunners-modal .modal-header{
+        border-bottom: 0;
+        padding: 20px;
+
+    }
+
+    .softtunners-modal .modal-body {
+       z-index: 1;
+    }
+    .softtunners-modal .btn-close{
+        color: #fff;
+        background: #091d3e;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: auto;
+        right: 10px;
+        position: absolute;
+    }
+    .softtunners-modal .modal-header i::before{
+        font-size: 18px;
+    }
+    .softtunners-modal .modal-body .heading h3{
+        color: white;
+        margin-bottom: 0.5rem; 
+    }
+    .softtunners-modal .modal-body .heading p{
+        color: aliceblue;
+        font-weight: 100;
+    }
+    .softtunners-modal .label{
+        color: white;
+    }
+    .softtunners-modal .form-control{
+        background-color: #ffffff0a;
+        border: 1px solid #ced4da00;
+        color: white;
+    }
+    .softtunners-modal .form-group{
+        margin-bottom: 1rem;
+    }
+</style>

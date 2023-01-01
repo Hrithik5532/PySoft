@@ -1,0 +1,176 @@
+{% comment %} <header>
+    <!-- Start Navigation -->
+    <nav
+        class="navbar  mobile-sidenav nav-border attr-border attr-border-full navbar-sticky navbar-default validnavs navbar-fixed white no-background">
+
+        <!-- Start Top Search -->
+        <div class="top-search">
+            <div class="container-xl">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Search -->
+
+        <div class="container-fill d-flex justify-content-between align-items-center">
+
+
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <!-- <img src="assets/img/logo-light.png" class="logo logo-display" alt="Logo">
+                    <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo"> -->
+                    <span class="logo-white">Soft<span class="logo-inner-white">Tunners</span>
+                </a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+
+                <!-- <img src="assets/img/logo.png" alt="Logo"> -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-times"></i>
+                </button>
+
+                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                    <!-- Home -->
+                    <li>
+                        <a href="{% url 'home' %}" class="active">Home</a>
+                    </li>
+                    <!-- Company  -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Company</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'about' %}">About Us</a></li>
+                            <li><a href="{% url 'team' %}">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <!-- Service -->
+                    <li>
+                        <a href="{% url 'service' %}" class="active">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blogs' %}">Blog</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#login">Customer Login</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+            <div class="attr-right">
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="side-menu">
+                            <a href="javascript:void(0)">
+                                <span class="bar-1"></span>
+                                <span class="bar-2"></span>
+                                <span class="bar-3"></span>
+                            </a>
+                        </li>
+                        <li class="contact">
+                            <div class="call">
+                                <div class="icon">
+                                    <i class="fas fa-comments-alt-dollar"></i>
+                                </div>
+                                <div class="info">
+                                    <p>Have any Questions?</p>
+                                    <h5><a href="mailto:info@crysta.com">softtunners@gmail.com</a></h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Side Menu -->
+                <div class="side">
+                    <a href="{% url 'home' %}" class="close-side"><i class="icon_close"></i></a>
+                    <div class="widget">
+                        <div class="logo">
+                            <!-- <img src="assets/img/logo-light.png" alt="Logo"> -->
+                            <span class="logo-white">Soft<span class="logo-inner-white">Tunners</span>
+                        </div>
+                        <p>
+                            Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now
+                            easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may
+                            purse means few blind.
+                        </p>
+                    </div>
+                    <div class="widget address">
+                        <div>
+                            <ul>
+                                <li>
+                                    <div class="content">
+                                        <p>Address</p>
+                                        <strong>Sakinaka, Mumbai, India 4000(72)</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <p>Email</p>
+                                        <strong><a
+                                                href="mailto:softtunners@gmail.com">softtunners@gmail.com</a></strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <p>Contact</p>
+                                        <strong><a href="tel:+918879963368">+91 8879963368</a></strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget newsletter">
+                        <h4 class="title">Get Subscribed!</h4>
+                        <form action="#">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" placeholder="Enter your e-mail" class="form-control" name="email">
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <i class="arrow_right"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="widget social">
+                        <ul class="link">
+                            <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="fab fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- End Side Menu -->
+
+                <!-- Overlay screen for menu -->
+                <div class="overlay-screen"></div>
+                <!-- End Overlay screen for menu -->
+
+            </div>
+            <!-- Main Nav -->
+
+        </div>
+    </nav>
+    <!-- End Navigation -->
+</header>
+
+
+
+
+ {% endcomment %}

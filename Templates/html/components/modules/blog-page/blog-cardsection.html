@@ -1,0 +1,102 @@
+{% comment %} Blog Card Main Section Starts from Here {% endcomment %}
+<section class="blog-area full-blog default-padding">
+  <div class="container">
+    <div class="blog-items">
+      <div class="row">
+        <div class="blog-content col-xl-8 col-lg-7 col-md-12 pr-35 pr-md-15 pl-md-15 pr-xs-15 pl-xs-15" >
+          {% include 'html/components/blog/blogCard.html' %}
+          {% comment %} Pagination {% endcomment %}
+          <div class="row">
+            <div class="col-md-12 pagi-area text-center">
+              <nav aria-label="navigation">
+                {% if blogs.has_other_pages %}
+                <ul class="pagination">
+                  {% if blogs.has_previous %}
+                  <li class="page-item">
+                    <a class="page-link" href="?page={{ blogs.previous_page_number }}"><i class="fas fa-angle-double-left"></i></a>
+                  </li>
+                  {% else %}
+                  <li class="disabled"></li>
+                  {% endif %} {% for i in blogs.paginator.page_range %} {% if
+                  blogs.number == i %}
+                  <li class="page-item active">
+                    <a class="page-link" href="javascript:void(0)">{{ i }}</a>
+                  </li>
+                  {% else %}
+                  <li class="page-item">
+                    <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+                  </li>
+                  {% endif %} {% endfor %} {% if blogs.has_next %}
+                  <li class="page-item">
+                    <a class="page-link" href="?page={{ posts.next_page_number }}"><i class="fas fa-angle-double-right"></i></a>
+                  </li>
+                  {% else %}
+                  <li class="disabled"></li>
+                  {% endif %}
+                </ul>
+                {% endif %}
+              </nav>
+            </div>
+          </div>
+		  {% comment %} Pagination Code Ends Here {% endcomment %}
+        </div>
+
+        {% comment %} Side Bar that Contains Subscribe, Tags and Latest News Components {% endcomment %}
+        <div class="sidebar col-xl-4 col-lg-5 col-md-12 mt-md-50 mt-xs-50">
+          <aside>
+            <div class="sidebar-item search">
+              <div class="sidebar-info">
+                <form>
+                  <input
+                    type="text"
+                    placeholder="Enter Keyword"
+                    name="text"
+                    class="form-control"
+                  />
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="sidebar-item category">
+              <h4 class="title">category list</h4>
+              <div class="sidebar-info">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">national <span>69</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">national <span>25</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">sports <span>18</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">megazine <span>37</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">health <span>12</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar-item tags">
+              <h4 class="title">tags</h4>
+              <div class="sidebar-info">
+                <ul>
+                  <li><a href="javascript:void(0)">Fashion</a></li>
+                  <li><a href="javascript:void(0)">Education</a></li>
+                  <li><a href="javascript:void(0)">nation</a></li>
+                  <li><a href="javascript:void(0)">study</a></li>
+                  <li><a href="javascript:void(0)">health</a></li>
+                  <li><a href="javascript:void(0)">food</a></li>
+                  <li><a href="javascript:void(0)">travel</a></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+        {% comment %} Side Bar Ends Here {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
