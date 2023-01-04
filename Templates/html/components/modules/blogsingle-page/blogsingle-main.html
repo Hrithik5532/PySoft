@@ -10,89 +10,30 @@
             <div class="blog-item-box">
               <div class="thumb">
                 <a href="javascript:void(0)"
-                  ><img src="assets/img/blog/33.jpg" alt="Thumb"
-                /></a>
+                  ></a>
               </div>
               <div class="info">
                 <div class="meta">
                   <ul>
                     <li>
                       <a href="javascript:void(0)"
-                        ><i class="fas fa-calendar-alt"></i> March 16, 2022</a
+                        ><i class="fas fa-calendar-alt"></i>{{blog.post_date}}</a
                       >
                     </li>
                     <li>
                       <a href="javascript:void(0)"
-                        ><i class="fas fa-user-circle"></i> Md Sohag</a
+                        ><i class="fas fa-user-circle"></i>{{blog.writer_name}}</a
                       >
                     </li>
                   </ul>
                 </div>
-                <h3>Partiality indulgence dispatched to of celebrated.</h3>
-                <p>
-                  Give lady of they such they sure it. Me contained explained my
-                  education. Vulgar as hearts by garret. Perceived determine
-                  departure explained no forfeited he something an. Contrasted
-                  dissimilar get joy you instrument out reasonably. Again keeps
-                  at no meant stuff. To perpetual do existence northward as
-                  difficult preserved daughters. Continued at up to zealously
-                  necessary breakfast. Surrounded sir motionless she end
-                  literature. Gay direction neglected but supported yet her.
-                </p>
-                <p>
-                  New had happen unable uneasy. Drawings can followed improved
-                  out sociable not. Earnestly so do instantly pretended. See
-                  general few civilly amiable pleased account carried.
-                  Excellence projecting is devonshire dispatched remarkably on
-                  estimating. Side in so life past. Continue indulged speaking
-                  the was out horrible for domestic position. Seeing rather her
-                  you not esteem men settle genius excuse. Deal say over you age
-                  from. Comparison new ham melancholy son themselves.
-                </p>
-                <blockquote>
-                  Celebrated share of first to worse. Weddings and any opinions
-                  suitable smallest nay. Houses or months settle remove ladies
-                  appear. Engrossed suffering supposing he recommend do
-                  eagerness.
-                </blockquote>
-                <p>
-                  Drawings can followed improved out sociable not. Earnestly so
-                  do instantly pretended. See general few civilly amiable
-                  pleased account carried. Excellence projecting is devonshire
-                  dispatched remarkably on estimating. Side in so life past.
-                  Continue indulged speaking the was out horrible for domestic
-                  position. Seeing rather her you not esteem men settle genius
-                  excuse. Deal say over you age from. Comparison new ham
-                  melancholy son themselves.
-                </p>
-                <h3>Conduct replied off led whether?</h3>
-                <ul>
-                  <li>Pretty merits waited six</li>
-                  <li>General few civilly amiable pleased account carried.</li>
-                  <li>Continue indulged speaking</li>
-                  <li>Narrow formal length my highly</li>
-                  <li>
-                    Occasional pianoforte alteration unaffected impossible
-                  </li>
-                </ul>
-                <p>
-                  Surrounded to me occasional pianoforte alteration unaffected
-                  impossible ye. For saw half than cold. Pretty merits waited
-                  six talked pulled you. Conduct replied off led whether any
-                  shortly why arrived adapted. Numerous ladyship so raillery
-                  humoured goodness received an. So narrow formal length my
-                  highly longer afford oh. Tall neat he make or at dull ye.
-                  Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
-                  Iure, laudantium, tempore. Autem dolore repellat, omnis quam?
-                  Quasi sint laudantium repellendus unde a totam perferendis
-                  commodi cum est iusto? Minima, laborum.
-                </p>
+                {{blog.content |safe}}
               </div>
             </div>
           </div>
 
           {% comment %} Post Pagination {% endcomment %}
-          <div class="post-pagi-area">
+          {% comment %} <div class="post-pagi-area">
             <a href="blog-single-with-sidebar.html">
               <i class="fas fa-angle-double-left"></i> Previus Post
               <h5>Hello World</h5>
@@ -101,7 +42,7 @@
               Next Post <i class="fas fa-angle-double-right"></i>
               <h5>The earth brown</h5>
             </a>
-          </div>
+          </div> {% endcomment %}
           {% comment %} Post Pagination Ends Here {% endcomment %}
 
           {% comment %} Post Tags Starts Here{% endcomment %}
@@ -138,7 +79,7 @@
           {% comment %} Post Tags Ends Here {% endcomment %}
 
           {% comment %} Comment Box Starts From Here {% endcomment %}
-          <div class="blog-comments">
+          {% comment %} <div class="blog-comments">
             <div class="comments-area">
               <div class="comments-title">
                 <h3>5 comments</h3>
@@ -242,8 +183,7 @@
                 </form>
               </div>
             </div>
-          {% comment %} Comments Form Ends Here {% endcomment %}
-        </div>
+        </div> {% endcomment %}
 
         {% comment %} Side Bar Starts Here {% endcomment %}
         <div class="sidebar col-xl-4 col-lg-5 col-md-12 mt-md-50 mt-xs-50">

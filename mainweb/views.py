@@ -169,8 +169,8 @@ def blogMain(request):
         return render(request, "html/blog.html",context)
 
 
-def blog(request,slug):
-    blog = get_object_or_404(Post,title =slug)
+def blog(request,pk):
+    blog = get_object_or_404(Post,post_id =pk)
     ip = get_client_ip(request)
 
     if not IpModel.objects.filter(ip=ip).exists():
@@ -214,7 +214,7 @@ def blog(request,slug):
            'comments':comments,
            'count_comments':count_comments
     }
-    return render(request,  "html/Blog-Page.html",context)
+    return render(request,  "html/blog-single.html",context)
 
 
 def about(request):
